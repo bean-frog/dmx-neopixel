@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.14.3</Version>
+  <Author>beanfrog</Author>
+ </Creator>
+ <Manufacturer>beanfrog</Manufacturer>
+ <Model>dmx_neopixel</Model>
+ <Type>Other</Type>
+ <Channel Name="Master Brightness">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="255">Master Brightness</Capability>
+ </Channel>
+ <Channel Name="Color Mode">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="63">Static color (uses ch3)</Capability>
+  <Capability Min="64" Max="127">Gradient (ch3+ch4)</Capability>
+  <Capability Min="128" Max="191">Rainbow</Capability>
+  <Capability Min="192" Max="255">Randomized colors </Capability>
+ </Channel>
+ <Channel Name="Primary Hue">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="255">Primary effect color</Capability>
+ </Channel>
+ <Channel Name="Secondary Hue">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="255">Secondary color</Capability>
+ </Channel>
+ <Channel Name="Effect Mode">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="42">Solid (no animations)</Capability>
+  <Capability Min="43" Max="84">Chase (theater marquee)</Capability>
+  <Capability Min="85" Max="126">Pulse/breathing</Capability>
+  <Capability Min="127" Max="168">Strobe</Capability>
+  <Capability Min="169" Max="210">Sparkle (random on/off per-led)</Capability>
+  <Capability Min="211" Max="255">Wave</Capability>
+ </Channel>
+ <Channel Name="Effect Speed">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="255">Speed of current effect</Capability>
+ </Channel>
+ <Channel Name="Effect Direction">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="128">First to last</Capability>
+  <Capability Min="129" Max="255">Last to first</Capability>
+ </Channel>
+ <Channel Name="Segment Size">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="255">Size of Chase segments</Capability>
+ </Channel>
+ <Channel Name="Sparkle Density">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="255">Density of enabled LEDs during sparkle mode</Capability>
+ </Channel>
+ <Physical>
+  <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="0" DmxConnector="5-pin"/>
+ </Physical>
+</FixtureDefinition>
